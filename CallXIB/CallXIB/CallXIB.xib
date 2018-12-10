@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CallXIBVC">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="HMf-KS-ad5"/>
+                <outlet property="refCodeView" destination="crr-Jc-rTR" id="JiJ-Q5-83t"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="crr-Jc-rTR">
+                    <rect key="frame" x="0.0" y="258" width="375" height="151"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Labeljkwejbfkwejbfkjwndk nkan kjwnek" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="odo-pa-A7P">
+                            <rect key="frame" x="38.5" y="65" width="298.5" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="odo-pa-A7P" firstAttribute="centerX" secondItem="crr-Jc-rTR" secondAttribute="centerX" id="6uK-SB-F4x"/>
+                        <constraint firstItem="odo-pa-A7P" firstAttribute="centerY" secondItem="crr-Jc-rTR" secondAttribute="centerY" id="74A-QV-x9q"/>
+                        <constraint firstAttribute="height" constant="151" id="8wK-0s-cb7"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="crr-Jc-rTR" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="3Qt-S3-wwH"/>
+                <constraint firstAttribute="trailing" secondItem="crr-Jc-rTR" secondAttribute="trailing" id="H9S-5Q-kRk"/>
+                <constraint firstItem="crr-Jc-rTR" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Wox-yM-GTv"/>
+                <constraint firstItem="crr-Jc-rTR" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="iQf-V8-ip3"/>
+            </constraints>
+            <point key="canvasLocation" x="55.200000000000003" y="48.125937031484263"/>
+        </view>
+    </objects>
+</document>
