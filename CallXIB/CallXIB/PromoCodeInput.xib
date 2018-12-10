@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PromoCodeInput">
+            <connections>
+                <outlet property="codeClearButton" destination="m9F-9z-rNZ" id="2w9-0G-J3c"/>
+                <outlet property="codeRefferalActivityIndicator" destination="zRJ-VE-oAs" id="xPB-ba-fnt"/>
+                <outlet property="codeRefferalLabel" destination="Jr3-Xm-WPO" id="MZr-Ja-qch"/>
+                <outlet property="codeSkipButton" destination="eUc-NS-nVg" id="kyZ-8Y-jrN"/>
+                <outlet property="codeUseCodeButton" destination="Xbq-5v-ehn" id="tXf-6Z-BoA"/>
+                <outlet property="content" destination="iN0-l3-epB" id="BWu-eX-crW"/>
+                <outlet property="dialogView" destination="2YV-Zg-joG" id="37U-pA-9Fo"/>
+                <outletCollection property="codeRefferalTextFields" destination="qoE-jD-M13" id="LBF-L1-XYW"/>
+                <outletCollection property="codeRefferalTextFields" destination="hM8-9J-4Dc" id="ecM-A3-lMH"/>
+                <outletCollection property="codeRefferalTextFields" destination="iHP-uD-exf" id="rFj-cf-VA8"/>
+                <outletCollection property="codeRefferalTextFields" destination="lUS-bQ-SWN" id="YGl-Nr-1r6"/>
+                <outletCollection property="codeRefferalTextFields" destination="UsL-sK-Ndx" id="68q-Xm-LER"/>
+                <outletCollection property="codeRefferalTextFields" destination="2WH-lD-bG6" id="CII-XV-6l8"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2YV-Zg-joG">
+                    <rect key="frame" x="16" y="220.5" width="343" height="226"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Uky-bm-MJx">
+                            <rect key="frame" x="0.0" y="0.0" width="343" height="226"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="500" text="Please enter code" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Jr3-Xm-WPO">
+                                    <rect key="frame" x="20" y="0.0" width="303" height="40"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" placeholder="YES" id="SfF-pV-kbM"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yg3-QG-dmZ">
+                                    <rect key="frame" x="20" y="48" width="303" height="40"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="47v-bi-m6Q">
+                                            <rect key="frame" x="46.5" y="0.0" width="210" height="40"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qoE-jD-M13">
+                                                    <rect key="frame" x="0.0" y="0.0" width="30" height="40"/>
+                                                    <color key="tintColor" red="0.89618283509999996" green="0.174743861" blue="0.047521017489999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="30" id="BzM-bp-qq4"/>
+                                                    </constraints>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="alert"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                                            <real key="value" value="2"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <real key="value" value="4"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <action selector="enteredRefferalCodeCharacter:" destination="-1" eventType="editingChanged" id="TPl-bb-7iE"/>
+                                                    </connections>
+                                                </textField>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hM8-9J-4Dc">
+                                                    <rect key="frame" x="34" y="0.0" width="30" height="40"/>
+                                                    <color key="tintColor" red="0.89618283509999996" green="0.174743861" blue="0.047521017489999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="30" id="N5T-AL-n5h"/>
+                                                    </constraints>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="alert"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                                            <real key="value" value="2"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <real key="value" value="4"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <action selector="enteredRefferalCodeCharacter:" destination="-1" eventType="editingChanged" id="ais-5Q-cGK"/>
+                                                    </connections>
+                                                </textField>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iHP-uD-exf">
+                                                    <rect key="frame" x="68" y="0.0" width="30" height="40"/>
+                                                    <color key="tintColor" red="0.89618283509999996" green="0.174743861" blue="0.047521017489999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="30" id="cJ7-wI-SmJ"/>
+                                                    </constraints>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="alert"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                                            <real key="value" value="2"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <real key="value" value="4"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <action selector="enteredRefferalCodeCharacter:" destination="-1" eventType="editingChanged" id="whB-IA-ZUg"/>
+                                                    </connections>
+                                                </textField>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fmK-gs-3ue">
+                                                    <rect key="frame" x="102" y="0.0" width="6" height="40"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="6" id="782-9p-a8G"/>
+                                                    </constraints>
+                                                </view>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lUS-bQ-SWN">
+                                                    <rect key="frame" x="112" y="0.0" width="30" height="40"/>
+                                                    <color key="tintColor" red="0.89618283509999996" green="0.174743861" blue="0.047521017489999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="30" id="pV1-sH-D5b"/>
+                                                    </constraints>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="alert"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                                            <real key="value" value="2"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <real key="value" value="4"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <action selector="enteredRefferalCodeCharacter:" destination="-1" eventType="editingChanged" id="cc9-Z7-fa9"/>
+                                                    </connections>
+                                                </textField>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UsL-sK-Ndx">
+                                                    <rect key="frame" x="146" y="0.0" width="30" height="40"/>
+                                                    <color key="tintColor" red="0.89618283509999996" green="0.174743861" blue="0.047521017489999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="30" id="9cA-S0-VG2"/>
+                                                    </constraints>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="alert"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                                            <real key="value" value="2"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <real key="value" value="4"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <action selector="enteredRefferalCodeCharacter:" destination="-1" eventType="editingChanged" id="rdY-LB-Kpr"/>
+                                                    </connections>
+                                                </textField>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2WH-lD-bG6">
+                                                    <rect key="frame" x="180" y="0.0" width="30" height="40"/>
+                                                    <color key="tintColor" red="0.89618283509999996" green="0.174743861" blue="0.047521017489999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="30" id="0lI-3i-J1z"/>
+                                                    </constraints>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="alert"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                                            <real key="value" value="2"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <real key="value" value="4"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <action selector="enteredRefferalCodeCharacter:" destination="-1" eventType="editingChanged" id="8EG-1p-UxE"/>
+                                                    </connections>
+                                                </textField>
+                                            </subviews>
+                                        </stackView>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BN1-8W-M2r">
+                                            <rect key="frame" x="46.5" y="0.0" width="210" height="40"/>
+                                            <connections>
+                                                <action selector="focusOnLastRefferalField:" destination="-1" eventType="touchUpInside" id="DG3-5h-2XF"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstItem="47v-bi-m6Q" firstAttribute="centerX" secondItem="Yg3-QG-dmZ" secondAttribute="centerX" id="B4U-mH-u2o"/>
+                                        <constraint firstItem="BN1-8W-M2r" firstAttribute="top" secondItem="Yg3-QG-dmZ" secondAttribute="top" id="ED7-8P-6D5"/>
+                                        <constraint firstItem="BN1-8W-M2r" firstAttribute="leading" secondItem="47v-bi-m6Q" secondAttribute="leading" id="GXG-d6-FbM"/>
+                                        <constraint firstAttribute="height" constant="40" id="PCD-RV-XDJ"/>
+                                        <constraint firstItem="BN1-8W-M2r" firstAttribute="trailing" secondItem="47v-bi-m6Q" secondAttribute="trailing" id="cc5-qC-gPb"/>
+                                        <constraint firstAttribute="bottom" secondItem="47v-bi-m6Q" secondAttribute="bottom" id="deD-6M-HKF"/>
+                                        <constraint firstItem="47v-bi-m6Q" firstAttribute="top" secondItem="Yg3-QG-dmZ" secondAttribute="top" id="p3O-No-Fiu"/>
+                                        <constraint firstAttribute="bottom" secondItem="BN1-8W-M2r" secondAttribute="bottom" id="q7y-La-xBr"/>
+                                    </constraints>
+                                </view>
+                                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ab3-Zq-hwI">
+                                    <rect key="frame" x="20" y="96" width="303" height="54"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xbq-5v-ehn">
+                                            <rect key="frame" x="0.0" y="4" width="303" height="50"/>
+                                            <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="50" id="zJI-O4-YZS"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <state key="normal" title="Use Code"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                    <real key="value" value="20"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="refferalCode:" destination="-1" eventType="touchUpInside" id="9A8-DS-Jfd"/>
+                                            </connections>
+                                        </button>
+                                        <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="zRJ-VE-oAs">
+                                            <rect key="frame" x="267" y="17" width="20" height="20"/>
+                                        </activityIndicatorView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="Xbq-5v-ehn" secondAttribute="bottom" id="CPC-nC-kiB"/>
+                                        <constraint firstAttribute="trailing" secondItem="Xbq-5v-ehn" secondAttribute="trailing" id="FiY-Cp-MMQ"/>
+                                        <constraint firstItem="Xbq-5v-ehn" firstAttribute="top" secondItem="Ab3-Zq-hwI" secondAttribute="top" constant="4" id="Kq2-s1-AvC"/>
+                                        <constraint firstItem="Xbq-5v-ehn" firstAttribute="leading" secondItem="Ab3-Zq-hwI" secondAttribute="leading" id="mdc-2O-q73"/>
+                                        <constraint firstItem="zRJ-VE-oAs" firstAttribute="centerY" secondItem="Ab3-Zq-hwI" secondAttribute="centerY" id="n4p-gK-LrV"/>
+                                        <constraint firstItem="Xbq-5v-ehn" firstAttribute="trailing" secondItem="zRJ-VE-oAs" secondAttribute="trailing" constant="16" id="xeh-ht-Ye5"/>
+                                    </constraints>
+                                </view>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eUc-NS-nVg">
+                                    <rect key="frame" x="20" y="158" width="303" height="30"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="30" id="cxg-r4-P2M"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <state key="normal" title="Skip"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                            <real key="value" value="20"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="dissmiss:" destination="-1" eventType="touchUpInside" id="8e1-MT-jRN"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m9F-9z-rNZ">
+                                    <rect key="frame" x="20" y="196" width="303" height="30"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="30" id="H3L-Oh-vEy"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <state key="normal" title="Clear"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                            <real key="value" value="20"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="eventClearFieldsText:" destination="-1" eventType="touchUpInside" id="Mh0-D7-BFG"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <edgeInsets key="layoutMargins" top="0.0" left="20" bottom="0.0" right="20"/>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.17908719182014465" green="0.21837189793586731" blue="0.98170214891433716" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="Uky-bm-MJx" firstAttribute="top" secondItem="2YV-Zg-joG" secondAttribute="top" id="7xk-ot-wbq"/>
+                        <constraint firstItem="Uky-bm-MJx" firstAttribute="leading" secondItem="2YV-Zg-joG" secondAttribute="leading" id="hRP-zx-Xfr"/>
+                        <constraint firstAttribute="trailing" secondItem="Uky-bm-MJx" secondAttribute="trailing" id="hvG-jB-lUF"/>
+                        <constraint firstAttribute="bottom" secondItem="Uky-bm-MJx" secondAttribute="bottom" id="una-RQ-2ah"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="2YV-Zg-joG" secondAttribute="trailing" constant="16" id="CxB-vn-ybA"/>
+                <constraint firstItem="2YV-Zg-joG" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="aPv-a7-VjF"/>
+                <constraint firstItem="2YV-Zg-joG" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="fnI-eP-l6e"/>
+                <constraint firstItem="2YV-Zg-joG" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="yhB-Nw-43R"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
