@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		77386CC021A6BDE8001CC18F /* CallXIBVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 77386CBF21A6BDE8001CC18F /* CallXIBVC.m */; };
-		77386CC321A6D2A9001CC18F /* CallNewXIB.m in Sources */ = {isa = PBXBuildFile; fileRef = 77386CC221A6D2A9001CC18F /* CallNewXIB.m */; };
-		77386CC521A6D2C6001CC18F /* CallNewXIB.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77386CC421A6D2C6001CC18F /* CallNewXIB.xib */; };
+		77386CC321A6D2A9001CC18F /* PromoCodeInput.m in Sources */ = {isa = PBXBuildFile; fileRef = 77386CC221A6D2A9001CC18F /* PromoCodeInput.m */; };
+		77386CC521A6D2C6001CC18F /* PromoCodeInput.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77386CC421A6D2C6001CC18F /* PromoCodeInput.xib */; };
 		773D84AD21A6BA9500B91749 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 773D84AC21A6BA9500B91749 /* AppDelegate.m */; };
 		773D84B021A6BA9500B91749 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 773D84AF21A6BA9500B91749 /* ViewController.m */; };
 		773D84B321A6BA9500B91749 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 773D84B121A6BA9500B91749 /* Main.storyboard */; };
@@ -23,9 +23,9 @@
 /* Begin PBXFileReference section */
 		77386CBE21A6BDE8001CC18F /* CallXIBVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CallXIBVC.h; sourceTree = "<group>"; };
 		77386CBF21A6BDE8001CC18F /* CallXIBVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CallXIBVC.m; sourceTree = "<group>"; };
-		77386CC121A6D2A9001CC18F /* CallNewXIB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CallNewXIB.h; sourceTree = "<group>"; };
-		77386CC221A6D2A9001CC18F /* CallNewXIB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CallNewXIB.m; sourceTree = "<group>"; };
-		77386CC421A6D2C6001CC18F /* CallNewXIB.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CallNewXIB.xib; sourceTree = "<group>"; };
+		77386CC121A6D2A9001CC18F /* PromoCodeInput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PromoCodeInput.h; sourceTree = "<group>"; };
+		77386CC221A6D2A9001CC18F /* PromoCodeInput.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PromoCodeInput.m; sourceTree = "<group>"; };
+		77386CC421A6D2C6001CC18F /* PromoCodeInput.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PromoCodeInput.xib; sourceTree = "<group>"; };
 		773D84A821A6BA9500B91749 /* CallXIB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CallXIB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		773D84AB21A6BA9500B91749 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		773D84AC21A6BA9500B91749 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -78,9 +78,9 @@
 				773D84C421A6BAF800B91749 /* CallXIB.xib */,
 				77386CBE21A6BDE8001CC18F /* CallXIBVC.h */,
 				77386CBF21A6BDE8001CC18F /* CallXIBVC.m */,
-				77386CC121A6D2A9001CC18F /* CallNewXIB.h */,
-				77386CC221A6D2A9001CC18F /* CallNewXIB.m */,
-				77386CC421A6D2C6001CC18F /* CallNewXIB.xib */,
+				77386CC121A6D2A9001CC18F /* PromoCodeInput.h */,
+				77386CC221A6D2A9001CC18F /* PromoCodeInput.m */,
+				77386CC421A6D2C6001CC18F /* PromoCodeInput.xib */,
 				77899A6021A7F292002151F9 /* PhoneVerificationController.xib */,
 				773D84B421A6BA9700B91749 /* Assets.xcassets */,
 				773D84B621A6BA9700B91749 /* LaunchScreen.storyboard */,
@@ -151,7 +151,7 @@
 				773D84B521A6BA9700B91749 /* Assets.xcassets in Resources */,
 				773D84B321A6BA9500B91749 /* Main.storyboard in Resources */,
 				77899A6121A7F292002151F9 /* PhoneVerificationController.xib in Resources */,
-				77386CC521A6D2C6001CC18F /* CallNewXIB.xib in Resources */,
+				77386CC521A6D2C6001CC18F /* PromoCodeInput.xib in Resources */,
 				773D84C521A6BAF800B91749 /* CallXIB.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -166,7 +166,7 @@
 				773D84B021A6BA9500B91749 /* ViewController.m in Sources */,
 				773D84BB21A6BA9700B91749 /* main.m in Sources */,
 				77386CC021A6BDE8001CC18F /* CallXIBVC.m in Sources */,
-				77386CC321A6D2A9001CC18F /* CallNewXIB.m in Sources */,
+				77386CC321A6D2A9001CC18F /* PromoCodeInput.m in Sources */,
 				773D84AD21A6BA9500B91749 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

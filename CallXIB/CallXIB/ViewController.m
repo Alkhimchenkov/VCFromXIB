@@ -8,9 +8,9 @@
 
 #import "ViewController.h"
 #import "CallXIBVC.h"
-#import "CallNewXIB.h"
+#import "PromoCodeInput.h"
 
-@interface ViewController ()
+@interface ViewController () <PromoCodeInputDelegate>
 
 @end
 
@@ -23,7 +23,8 @@
 
 - (IBAction)Tap:(id)sender {
 
-    CallNewXIB *vc = [[CallNewXIB alloc] init];
+    PromoCodeInput *vc = [[PromoCodeInput alloc] init];
+    vc.delegate = self;
     [vc initialize];
     [vc show:YES];
     
@@ -32,5 +33,12 @@
   //  [self presentViewController:vc animated:NO completion:nil];
     
 }
+
+
+-(void)dissmiss:(BOOL)animation vc:(NSObject*)vc{
+    [(PromoCodeInput*)vc dismiss:YES];
+}
+
+
 
 @end
